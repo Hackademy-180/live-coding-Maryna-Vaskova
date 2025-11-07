@@ -1,0 +1,12 @@
+*{
+    font-family: "Inika", serif;
+}
+h1, h2, h3, h4, .h1, .h2, .h3, .h4{
+    font-family: "Mystery Quest", system-ui;
+}
+:root {
+--violet: rgb (102,96,110);
+--bluviolet: rgb (108,113,132);
+--darkgrey: rgb (65,65,65);
+--softgrey: rgb (206,199,182);
+}
