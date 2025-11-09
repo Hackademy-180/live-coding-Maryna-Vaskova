@@ -106,3 +106,88 @@ h1 {
         display: none;
     }
 }
+/* ---------- SECTION 1: FOR HER ---------- */
+.section1 {
+  background: linear-gradient(rgba(114, 79, 66, 0.3), rgba(114, 79, 66, 0.3)),
+              url("./media/for-her1.jpg") center center / cover no-repeat;
+  position: relative;
+  color: var(--lightRose);
+}
+
+
+.section1-content {
+    /* height: 100vh; */
+  position: relative;
+  z-index: 2;
+}
+
+.btn-outline-light {
+  border: 2px solid var(--lightRose);
+  color: var(--lightRose);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--lightRose);
+  color: var(--coffee);
+  border-color: var(--lightRose);
+}
+
+
+@media (max-width: 768px) {
+  .section1 {
+    text-align: center;
+    background-position: top;
+  }
+
+  .section1-content {
+    margin: 0 auto;
+  }
+
+  .btn-outline-light {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+/* ---------- SECTION 2: FOR HIM ---------- */
+.section2 {
+  background: linear-gradient(rgba(114, 79, 66, 0.3), rgba(114, 79, 66, 0.3)),
+              url("./media/for-him1.jpg") center center / cover no-repeat;
+  position: relative;
+  color: var(--lightRose);
+}
+
+.section2-content {
+  position: relative;
+  z-index: 2;
+}
+
+.section2 .btn-outline-light {
+  border: 2px solid var(--lightRose);
+  color: var(--lightRose);
+  transition: all 0.3s ease;
+}
+
+.section2 .btn-outline-light:hover {
+  background-color: var(--lightRose);
+  color: var(--coffee);
+  border-color: var(--lightRose);
+}
+
+
+@media (max-width: 768px) {
+  .section2 {
+    text-align: center;
+    background-position: top;
+  }
+
+  .section2-content {
+    margin: 0 auto;
+  }
+
+  .section2 .btn-outline-light {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
