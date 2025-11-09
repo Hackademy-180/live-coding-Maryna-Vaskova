@@ -1,12 +1,61 @@
 *{
-    font-family: "Inika", serif;
+    font-family: "Great Vibes", cursive;
 }
 h1, h2, h3, h4, .h1, .h2, .h3, .h4{
-    font-family: "Mystery Quest", system-ui;
+    font-family: "Alex Brush", cursive;
 }
 :root {
---violet: rgb (102,96,110);
---bluviolet: rgb (108,113,132);
---darkgrey: rgb (65,65,65);
---softgrey: rgb (206,199,182);
+--vintageRosa: rgb(198, 132, 109);
+--lightRose: rgb(255,238,229);
+--coffee: rgb(114,79,66);
 }
+h1 {
+    color: var(--lightRose);
+    font-size: 25rem;
+}
+.txt-coffee {
+    color: var(--coffee);
+}
+.txt-lightRose {
+    color: var(--lightRose);
+}
+.txt-vintageRosa {
+    color: var(--vintageRosa);
+}
+
+.bg-coffee {
+    background-color: var(--coffee);
+}
+.bg-lightRose {
+    background-color: var(--lightRose);
+}
+.bg-vintageRosa {
+    background-color: var(--vintageRosa);
+}
+
+nav {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.nav-custom {
+    height: 80px;
+    background-color: var(--lightRose);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.img-logo{
+    height: 60px;
+    width: auto;
+}
+.nav-link {
+    color: var(--vintageRosa);
+}
+.nav-link:hover {
+color: var(--coffee);
+}
+
+/* i {
+    font-size: 25px;
+} */
