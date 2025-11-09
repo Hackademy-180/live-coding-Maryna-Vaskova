@@ -191,3 +191,128 @@ h1 {
   }
 }
 
+.imgProduct {
+    width: 100%;
+    height: 500px;
+}
+
+
+/* CSS NON PERSONALE, BOOTSTRAP */
+.videoSection {
+  position: relative;
+  /* background-color: black; */
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.videoSection video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.videoSection .container {
+  position: relative;
+  z-index: 2;
+}
+
+.videoSection .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--vintageRosa);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  .videoSection {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  .videoSection video {
+    display: none;
+  }
+}
+/* FINE CSS BOOTSTRAP */
+
+/* ---------- SECTION FORM ---------- */
+.section-form {
+  background: linear-gradient(rgba(198, 132, 109, 0.2), rgba(198, 132, 109, 0.2)),
+              url("./media/form.jpg") center center / cover no-repeat;
+  position: relative;
+}
+
+/* Текст */
+.section-form h2, 
+.section-form p {
+  color: var(--coffee);
+}
+
+/* Форма */
+.section-form form {
+  background-color: rgba(255, 238, 229, 0.5);
+  border: 1px solid var(--vintageRosa);
+  font-size: 1.5rem;
+}
+
+/* Кнопка */
+.btn-coffee {
+   background-color: var(--coffee);
+  color: var(--lightRose);
+  border: 2px solid var(--coffee);
+  transition: all 0.3s ease;
+  padding: 8px 32px; 
+  width: auto; 
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 50px; 
+}
+
+.btn-coffee:hover {
+  background-color: var(--vintageRosa);
+  color: var(--lightRose);
+  border-color: var(--vintageRosa);
+}
+.section-form input::placeholder,
+.section-form textarea::placeholder {
+  font-size: 1.5rem; 
+}
+
+
+@media (max-width: 768px) {
+  .section-form {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .section-form h2 {
+    font-size: 2rem;
+  }
+
+  .section-form form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn-coffee {
+    width: 100%; 
+    border-radius: 12px;
+  }
+}
