@@ -29,14 +29,14 @@
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars txt-vintageRosa"></i>
-            </button>
+  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+  aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fa-solid fa-bars txt-vintageRosa"></i>
+  <i class="fa-solid fa-xmark txt-vintageRosa d-none"></i> <!-- хрестик -->
+</button>
 
-
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 txt-coffee">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 txt-coffee">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -203,7 +203,7 @@
   <div class="container">
     <div class="row align-items-center">
       <!-- LEFT SIDE TEXT -->
-      <div class="col-12 col-md-6 mb-5 mb-md-0 text-start">
+      <div class="col-12 col-md-6 mb-5 mb-md-0 text-start formLeft">
         <h2 class="display-4 fw-bold txt-lightRose mb-3">Parlaci del tuo sogno</h2>
         <p class="fs-4 txt-lightRose">
           Raccontaci come immagini il tuo giorno perfetto — saremo felici di aiutarti a realizzarlo nei minimi dettagli.
@@ -231,6 +231,51 @@
     </div>
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer bg-lightRose text-vintageRosa pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-12 col-md-3">
+        <h4 class="display-6">Wedding Planner</h4>
+        <p>Realizziamo i tuoi sogni con eleganza, passione e cura dei dettagli per un matrimonio davvero indimenticabile.</p>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <h5 class="fw-bold">Contatti</h5>
+        <ul class="list-unstyled">
+          <li><i class="fa-solid fa-location-dot me-2"></i>Via Roma 00, Bari</li>
+          <li><i class="fa-solid fa-phone me-2"></i>+39 333 123 4567</li>
+          <li><i class="fa-solid fa-envelope me-2"></i>info@weddingplanner.it</li>
+          <li><i class="fa-brands fa-instagram me-2"></i>@weddingplanner.it</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-3 text-md-center">
+        <h5 class="fw-bold">Hai domande?</h5>
+        <p>Scrivici, saremo felici di aiutarti a organizzare il tuo giorno speciale.</p>
+        <button class="btn btn-coffee mt-2">Contattaci</button>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <h5 class="fw-bold">Sign me up!</h5>
+        <p>Ricevi ispirazioni, consigli e novità sui nostri servizi esclusivi.</p>
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="La tua email">
+          <button class="btn btn-coffee" type="submit">Iscriviti</button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="mt-5" style="border-color: var(--vintageRosa); opacity: 0.3;">
+
+    <div class="text-center small txt-vintageRosa">
+      © 2025 Wedding Planner | Tutti i diritti riservati
+    </div>
+  </div>
+</footer>
+
 
 
 
